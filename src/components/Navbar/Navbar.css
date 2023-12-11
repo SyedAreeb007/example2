@@ -1,0 +1,149 @@
+/* Common styles for all screen sizes */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    background: #fde1ff;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjusted gap for smaller screens */
+    list-style: none;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 60%; /* Adjusted width for smaller screens */
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.nav-login-cart {
+    display: flex;
+    gap: 20px; /* Adjusted gap for smaller screens */
+    align-items: center;
+}
+
+.nav-login-cart button {
+    width: 120px; /* Adjusted width for smaller screens */
+    height: 48px; /* Adjusted height for smaller screens */
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    background: #fde1ff;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-cart-count {
+    width: 18px; /* Adjusted width for smaller screens */
+    height: 18px; /* Adjusted height for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px; /* Adjusted margin for smaller screens */
+    margin-left: -35px; /* Adjusted margin for smaller screens */
+    border-radius: 9px;
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    background: red;
+    color: white;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-login-cart {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Your existing styles here */
+
+/* New styles for the toggle button */
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .toggle-button {
+      display: flex;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .mobile-menu {
+      display: flex;
+    }
+  
+    .mobile-menu-open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .mobile-menu-open .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .mobile-menu-open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  

@@ -1,0 +1,50 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px; /* Add some padding for smaller screens */
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 3em; /* Adjust font size for smaller screens */
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 100px; /* Adjust width for smaller screens */
+    height: 4px; /* Adjust height for smaller screens */
+    border-radius: 5px;
+    background: #252525;
+    margin-bottom: 20px; /* Add some space below the hr */
+}
+
+.popular-item {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+    display: flex;
+    gap: 10px;
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .popular {
+        margin-top: 70%;
+    }
+
+    .popular h1 {
+        font-size: 2.5em;
+    }
+
+    .popular hr {
+        width: 80px;
+        height: 3px;
+        margin-bottom: 15px;
+    }
+
+    .popular-item {
+        margin-top: 30px; /* Increase margin-top for more space in mobile mode */
+        flex-direction: column; /* Change to a column layout for smaller screens */
+        align-items: center; /* Center items for smaller screens */
+    }
+}

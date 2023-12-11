@@ -1,0 +1,67 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.contact h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-inner {
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .form {
+    padding-top: 100px;
+    text-align: center;
+} 
+
+
+.column input {
+    border-radius: 10px;
+    height: 40px;
+} 
+
+.name {
+    padding: 5px;
+    width: 10%;
+}
+
+.phone {
+    padding: 5px;
+    width: 10%;
+    margin-left: 1%;
+}
+
+.address {
+    padding: 5px;
+    width: 10%;
+}
+
+.email {
+    padding: 5px;
+    width: 10%;
+    margin-left: 1%;
+}
+
+.df {
+    padding: 60px;
+    margin-left: -10px;
+    width: 15%;
+}
+
+.form button {
+    background: #008000;
+    border-radius: 15px;
+    height: 40px;
+    width: 100px;
+    margin-left: 15%;
+    color: white;
+    cursor: pointer;
+}

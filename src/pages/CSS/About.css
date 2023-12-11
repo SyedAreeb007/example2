@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.about h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-inner {
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
