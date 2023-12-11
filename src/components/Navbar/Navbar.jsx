@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className={`navbar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
             <div className='nav-logo'>
                 <img src={logo} alt="Logo" />
-                <p>LIBAAS</p>
+                <p>Trend House</p>
             </div>
             <div className="toggle-button" onClick={handleMobileMenuToggle}>
                 <div className="bar"></div>
